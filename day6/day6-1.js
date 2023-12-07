@@ -4,8 +4,6 @@ let time = [];
 let distance = [];
 let race = [];
 
-let speed = 0;
-let sum = 0;
 
 (async () => {
   const file = await open("./day6.txt");
