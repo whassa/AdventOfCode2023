@@ -32,11 +32,12 @@ let sum = 0;
     victories: 0,
   };
 
-  for( let y=0; y < race.time; y++) {
+  for( let y=0; y < race.time/2; y++) {
     if ( (y) * (race.time-y) > race.distance ){
-      race.victories ++;
+      race.victories +=2 ;
     }
   }
+  if (race.time % 2 === 0) race.victories +=1;
   console.log('Sum: ', race.victories);
 
 })();
